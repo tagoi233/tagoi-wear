@@ -1,468 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">socl-scale=1.0">
-<title>Tagoi Wear | Wear the Market</title>
-<meta name="description" content="Tagoi Wear - forex and gold trading T-shirts from Eldoret, Kenya. XAUUSD, GBPUSD and more. T-shirts from KES 2,000 to KES 2,500. Order on WhatsApp, Instagram, TikTok or Facebook.">
-<meta property="og:title" content="Tagoi Wear | Wear the Market">
-<meta property="og:description" content="Trading-themed T-shirts for traders. KES 2,000 - 2,500. Order via WhatsApp.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#0d0518">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tagoi Wear | Wear The Market</title>
+<meta name="description" content="Forex and gold inspired streetwear from Eldoret, Kenya. Wear the market.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#0d0518;
-  --bg2:#150a26;
-  --card:#1b0f31;
-  --purple:#7b2ff7;
-  --purple-soft:#a678ff;
-  --gold:#f5c542;
-  --gold-deep:#c9971c;
-  --text:#f4eefc;
-  --muted:#a99cc4;
-  --green:#25d366;
-  --radius:18px;
-}
-*{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#b8860b;--gold2:#e0b83a;--black:#ffffff;--card:#f7f5f0;--line:#e3dfd3;--text:#111111;--muted:#666666}
+*{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
-h1,h2,h3{font-family:'Bebas Neue',sans-serif;letter-spacing:1.5px;font-weight:400}
-a{text-decoration:none;color:inherit}
-img,svg{max-width:100%;display:block}
-.container{width:min(1150px,92%);margin:0 auto}
-section{padding:90px 0}
-.gold{color:var(--gold)}
-.tag{display:inline-block;font-size:.78rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(245,197,66,.4);padding:6px 16px;border-radius:50px;margin-bottom:18px}
-.section-title{font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.05;margin-bottom:14px}
-.section-sub{color:var(--muted);max-width:560px;margin-bottom:50px}
-
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,5,24,.8);backdrop-filter:blur(14px);border-bottom:1px solid rgba(166,120,255,.15)}
-.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
-.logo{font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:2px}
-.logo span{color:var(--gold)}
-.nav-links{display:flex;gap:30px;align-items:center;list-style:none}
-.nav-links a{font-size:.92rem;color:var(--muted);transition:.25s}
-.nav-links a:hover{color:var(--gold)}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:50px;font-weight:600;font-size:.95rem;border:none;cursor:pointer;transition:.3s}
-.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#1a0f00;box-shadow:0 8px 28px rgba(245,197,66,.28)}
-.btn-gold:hover{transform:translateY(-3px);box-shadow:0 12px 34px rgba(245,197,66,.45)}
-.btn-outline{border:1.5px solid var(--purple-soft);color:var(--text);background:transparent}
-.btn-outline:hover{background:var(--purple);border-color:var(--purple)}
-.btn-wa{background:var(--green);color:#052b13}
-.btn-wa:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(37,211,102,.4)}
-.menu-btn{display:none;background:none;border:none;color:var(--text);font-size:1.8rem;cursor:pointer}
-
-/* HERO */
-.hero{min-height:100vh;display:flex;align-items:center;padding-top:110px;position:relative;background:radial-gradient(ellipse at 75% 30%,rgba(123,47,247,.35),transparent 55%),radial-gradient(ellipse at 10% 90%,rgba(245,197,66,.1),transparent 50%),var(--bg)}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
-.hero h1{font-size:clamp(3.4rem,9vw,7rem);line-height:.92;margin-bottom:22px}
-.hero h1 em{font-style:normal;background:linear-gradient(135deg,var(--gold),#ffe08a);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{color:var(--muted);font-size:1.1rem;max-width:480px;margin-bottom:34px}
-.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
-.hero-stats{display:flex;gap:40px;margin-top:50px}
-.hero-stats div strong{display:block;font-family:'Bebas Neue';font-size:2.2rem;color:var(--gold)}
-.hero-stats div span{font-size:.82rem;color:var(--muted)}
-.hero-visual{position:relative;display:flex;justify-content:center}
-.hero-visual::before{content:'';position:absolute;width:420px;height:420px;background:radial-gradient(circle,rgba(123,47,247,.55),transparent 68%);filter:blur(30px);top:50%;left:50%;transform:translate(-50%,-50%)}
-.hero-visual svg{width:min(420px,90%);position:relative;animation:float 5s ease-in-out infinite;filter:drop-shadow(0 30px 40px rgba(0,0,0,.6))}
-@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-16px) rotate(2deg)}}
-
-/* TICKER */
-.ticker{background:var(--gold);color:#1a0f00;overflow:hidden;white-space:nowrap;padding:13px 0;font-family:'Bebas Neue';font-size:1.25rem;letter-spacing:2px}
-.ticker-track{display:inline-block;animation:scroll 28s linear infinite}
-.ticker span{margin:0 28px}
+body{background:var(--black);color:var(--text);font-family:Montserrat,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:Oswald,sans-serif;text-transform:uppercase;letter-spacing:2px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:16px 6%;background:rgba(255,255,255,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+.logo{font-family:Oswald,sans-serif;font-size:24px;font-weight:700;letter-spacing:5px;color:var(--gold)}
+.logo small{display:block;font-size:9px;letter-spacing:6px;color:var(--text)}
+nav ul{display:flex;gap:28px;list-style:none;font-size:13px;font-weight:600;letter-spacing:2px}
+nav ul a:hover{color:var(--gold)}
+.btn{display:inline-block;padding:14px 30px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;font-weight:700;letter-spacing:2px;font-size:13px;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(212,175,55,.35)}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:120px 6% 60px;background:radial-gradient(circle at 80% 30%,#fbf3d9,#ffffff 60%)}
+.hero h1{font-size:clamp(48px,8vw,104px);line-height:1;color:#111}
+.hero h1 span{color:var(--gold)}
+.hero p{color:var(--muted);margin:22px 0 32px;max-width:480px}
+.hero .cta{display:flex;gap:16px;flex-wrap:wrap}
+.hero img{border:1px solid var(--gold);box-shadow:0 0 60px rgba(212,175,55,.2)}
+.ticker{overflow:hidden;background:#111;color:#f3d77a;padding:12px 0;white-space:nowrap}
+.ticker div{display:inline-block;animation:scroll 28s linear infinite;font-family:Oswald,sans-serif;letter-spacing:3px;font-weight:700}
 @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-/* PRODUCTS */
-.products{background:var(--bg2)}
-.filters{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:40px}
-.filter{padding:9px 22px;border-radius:50px;border:1px solid rgba(166,120,255,.3);background:transparent;color:var(--muted);cursor:pointer;font-size:.88rem;transition:.25s;font-family:inherit}
-.filter.active,.filter:hover{background:var(--purple);color:#fff;border-color:var(--purple)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:26px}
-.card{background:var(--card);border-radius:var(--radius);overflow:hidden;border:1px solid rgba(166,120,255,.12);transition:.35s;position:relative}
-.card:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:0 20px 44px rgba(0,0,0,.45)}
-.card-img{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%,rgba(123,47,247,.28),transparent 70%)}
-.card-img svg{width:72%}
-.badge{position:absolute;top:14px;left:14px;background:var(--gold);color:#1a0f00;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:50px;letter-spacing:1px;z-index:2}
-.card-body{padding:20px}
-.card-body h3{font-size:1.5rem;margin-bottom:4px}
-.card-body p{color:var(--muted);font-size:.85rem;margin-bottom:14px}
-.colors{display:flex;gap:8px;margin-bottom:16px}
-.dot{width:18px;height:18px;border-radius:50%;border:2px solid rgba(255,255,255,.25)}
-.card-foot{display:flex;justify-content:space-between;align-items:center}
-.price{font-family:'Bebas Neue';font-size:1.7rem;color:var(--gold)}
-.price small{font-size:.9rem;color:var(--muted)}
-.order-sm{background:var(--green);color:#052b13;padding:9px 18px;border-radius:50px;font-weight:600;font-size:.82rem;transition:.25s}
-.order-sm:hover{transform:scale(1.07)}
-.hidden{display:none}
-
-/* PRICING */
-.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px}
-.price-card{background:var(--card);border:1px solid rgba(166,120,255,.2);border-radius:var(--radius);padding:36px 30px;text-align:center;transition:.3s}
-.price-card.featured{border:2px solid var(--gold);background:linear-gradient(180deg,rgba(245,197,66,.1),var(--card));transform:scale(1.04)}
-.price-card:hover{transform:translateY(-6px)}
-.price-card.featured:hover{transform:scale(1.04) translateY(-6px)}
-.price-card h3{font-size:1.7rem;margin-bottom:6px}
-.big-price{font-family:'Bebas Neue';font-size:3.4rem;color:var(--gold);line-height:1;margin:14px 0 4px}
-.price-card ul{list-style:none;margin:22px 0 28px;text-align:left}
-.price-card li{padding:8px 0;color:var(--muted);font-size:.92rem;border-bottom:1px dashed rgba(166,120,255,.15)}
-.price-card li::before{content:'✔ ';color:var(--gold)}
-
-/* HOW TO ORDER */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px;counter-reset:s}
-.step{background:var(--card);border-radius:var(--radius);padding:34px 26px;border:1px solid rgba(166,120,255,.15);position:relative;counter-increment:s}
-.step::before{content:counter(s);font-family:'Bebas Neue';font-size:4.2rem;color:rgba(245,197,66,.18);position:absolute;top:6px;right:20px;line-height:1}
-.step .ic{font-size:2rem;margin-bottom:14px}
-.step h3{font-size:1.5rem;margin-bottom:8px;color:var(--gold)}
-.step p{color:var(--muted);font-size:.9rem}
-
-/* SIZE + ORDER FORM */
-.order{background:var(--bg2)}
-.order-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
-form{background:var(--card);padding:34px;border-radius:var(--radius);border:1px solid rgba(166,120,255,.2)}
-label{display:block;font-size:.82rem;color:var(--muted);margin:16px 0 6px;letter-spacing:.5px}
-label:first-child{margin-top:0}
-input,select,textarea{width:100%;padding:13px 16px;border-radius:12px;border:1px solid rgba(166,120,255,.25);background:var(--bg);color:var(--text);font-family:inherit;font-size:.95rem}
-input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
-form .btn{width:100%;justify-content:center;margin-top:24px}
-.size-table{width:100%;border-collapse:collapse;margin-top:20px;font-size:.9rem}
-.size-table th,.size-table td{padding:12px;text-align:center;border-bottom:1px solid rgba(166,120,255,.15)}
-.size-table th{color:var(--gold);font-weight:600}
-.size-table td{color:var(--muted)}
-.info-box{background:rgba(245,197,66,.08);border:1px solid rgba(245,197,66,.3);border-radius:14px;padding:18px 22px;margin-top:24px;font-size:.9rem;color:var(--muted)}
-.info-box strong{color:var(--gold)}
-
-/* FAQ */
-.faq-item{background:var(--card);border-radius:14px;margin-bottom:14px;border:1px solid rgba(166,120,255,.15);overflow:hidden}
-.faq-q{width:100%;text-align:left;background:none;border:none;color:var(--text);padding:20px 24px;font-size:1rem;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;font-family:inherit}
-.faq-q::after{content:'+';color:var(--gold);font-size:1.4rem;transition:.3s}
-.faq-item.open .faq-q::after{transform:rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease;padding:0 24px;color:var(--muted);font-size:.93rem}
-.faq-item.open .faq-a{max-height:200px;padding-bottom:20px}
-
-/* CONTACT */
-.contact{text-align:center;background:radial-gradient(ellipse at center,rgba(123,47,247,.3),transparent 65%),var(--bg)}
-.phone{font-family:'Bebas Neue';font-size:clamp(2.4rem,7vw,4.6rem);color:var(--gold);display:block;margin:12px 0 30px;letter-spacing:3px}
-.socials{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin-top:34px}
-.soc{display:flex;align-items:center;gap:10px;padding:13px 26px;border-radius:50px;border:1.5px solid rgba(166,120,255,.35);font-weight:600;font-size:.92rem;transition:.3s}
-.soc:hover{transform:translateY(-4px);border-color:var(--gold);background:rgba(245,197,66,.08)}
-
-/* FOOTER */
-footer{padding:34px 0;border-top:1px solid rgba(166,120,255,.15);text-align:center;color:var(--muted);font-size:.85rem}
-
-/* FLOATING WHATSAPP */
-.fab{position:fixed;bottom:24px;right:24px;width:62px;height:62px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;z-index:99;box-shadow:0 8px 26px rgba(37,211,102,.55);animation:pulse 2.2s infinite}
-.fab svg{width:32px;height:32px;fill:#fff}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%{box-shadow:0 0 0 20px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
-
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(34px);transition:.8s}
-.reveal.show{opacity:1;transform:none}
-
-/* RESPONSIVE */
-@media(max-width:860px){
-  .hero-grid,.order-grid{grid-template-columns:1fr}
-  .hero-visual{order:-1}
-  .nav-links{position:fixed;top:68px;left:0;right:0;background:var(--bg);flex-direction:column;padding:28px;gap:22px;transform:translateY(-130%);transition:.35s;border-bottom:1px solid rgba(166,120,255,.2)}
-  .nav-links.open{transform:none}
-  .menu-btn{display:block}
-  section{padding:70px 0}
-  .price-card.featured{transform:none}
-  .hero-stats{gap:24px}
-}
+section{padding:90px 6%}
+.title{text-align:center;margin-bottom:50px}
+.title h2{font-size:clamp(30px,5vw,52px);color:#111}
+.title h2 span{color:var(--gold)}
+.title p{color:var(--muted)}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px}
+.cat{background:var(--card);border:1px solid var(--line);padding:34px 20px;text-align:center;transition:.3s}
+.cat:hover{border-color:var(--gold);transform:translateY(-6px)}
+.cat h3{font-size:18px;color:var(--gold)}
+.cat p{font-size:12px;color:var(--muted)}
+.collection img{width:100%;border:1px solid var(--line)}
+.featured{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px}
+.item{background:var(--card);border:1px solid var(--line);overflow:hidden;transition:.3s}
+.item:hover{border-color:var(--gold)}
+.item img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.item .info{padding:22px}
+.item h3{font-size:20px}
+.item .price{color:var(--gold);font-weight:700;margin:6px 0 16px}
+.store{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;background:#faf8f2}
+.store h2{font-size:clamp(30px,5vw,52px)}
+.store h2 span{color:var(--gold)}
+.store p{color:var(--muted);margin:18px 0 28px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.step{border:1px solid var(--line);padding:34px;background:var(--card)}
+.step b{font-family:Oswald,sans-serif;font-size:54px;color:var(--gold);display:block}
+footer{border-top:1px solid var(--line);padding:50px 6%;text-align:center;color:var(--muted);font-size:13px}
+footer .logo{margin-bottom:12px}
+footer .links{display:flex;gap:26px;justify-content:center;margin:16px 0;flex-wrap:wrap}
+footer .links a:hover{color:var(--gold)}
+.wa{position:fixed;right:22px;bottom:22px;z-index:60;background:#25d366;color:#000;font-weight:700;padding:14px 22px;border-radius:40px;font-size:13px;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+@media(max-width:850px){.hero,.store{grid-template-columns:1fr}nav ul{display:none}}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <div class="container nav-inner">
-    <a href="#home" class="logo">TAGOI <span>WEAR</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#shop">Shop</a></li>
-      <li><a href="#pricing">Prices</a></li>
-      <li><a href="#how">How to Order</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a class="btn btn-gold" href="#order">Order Now</a></li>
-    </ul>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
-  </div>
+<div class="logo">TAGOI<small>WEAR</small></div>
+<ul>
+<li><a href="#shop">SHOP</a></li>
+<li><a href="#collection">COLLECTION</a></li>
+<li><a href="#featured">FEATURED</a></li>
+<li><a href="#order">HOW TO ORDER</a></li>
+</ul>
+<a class="btn" href="https://wa.me/254114464593">ORDER NOW</a>
 </nav>
 
-<!-- HERO -->
-<header class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <span class="tag">Eldoret • Kenya • Worldwide Traders</span>
-      <h1>WEAR<br>THE <em>MARKET</em></h1>
-      <p>Premium T-shirts for gold and forex traders. Rep XAUUSD, GBPUSD and the pairs you live and breathe, from KES 2,000.</p>
-      <div class="hero-btns">
-        <a href="#shop" class="btn btn-gold">Shop the Collection →</a>
-        <a href="https://wa.me/254114464593?text=Hi%20Tagoi%20Wear%2C%20I%20want%20to%20order%20a%20T-shirt" target="_blank" rel="noopener" class="btn btn-wa">Order on WhatsApp</a>
-      </div>
-      <div class="hero-stats">
-        <div><strong>KES 2,000+</strong><span>T-shirts from</span></div>
-        <div><strong>6+</strong><span>Trader designs</span></div>
-        <div><strong>24/7</strong><span>Market-ready</span></div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <svg viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg">
-        <defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1250"/><stop offset="1" stop-color="#0f0620"/></linearGradient></defs>
-        <path d="M95 20 L40 50 L10 105 L58 128 L72 105 L72 290 Q72 305 90 305 L210 305 Q228 305 228 290 L228 105 L242 128 L290 105 L260 50 L205 20 Q150 55 95 20Z" fill="url(#hg)" stroke="#f5c542" stroke-width="3"/>
-        <text x="150" y="150" text-anchor="middle" font-family="Bebas Neue,sans-serif" font-size="44" fill="#f5c542">XAUUSD</text>
-        <rect x="100" y="168" width="100" height="2" fill="#a678ff"/>
-        <g><rect x="112" y="190" width="10" height="46" fill="#25d366"/><rect x="116" y="182" width="2" height="62" fill="#25d366"/>
-        <rect x="134" y="200" width="10" height="38" fill="#ff4d6a"/><rect x="138" y="192" width="2" height="54" fill="#ff4d6a"/>
-        <rect x="156" y="184" width="10" height="50" fill="#25d366"/><rect x="160" y="176" width="2" height="66" fill="#25d366"/>
-        <rect x="178" y="178" width="10" height="44" fill="#25d366"/><rect x="182" y="170" width="2" height="60" fill="#25d366"/></g>
-        <text x="150" y="270" text-anchor="middle" font-family="Bebas Neue,sans-serif" font-size="20" fill="#f4eefc" letter-spacing="4">TAGOI WEAR</text>
-      </svg>
-    </div>
-  </div>
+<header class="hero">
+<div>
+<h1>Wear<br>The <span>Market</span></h1>
+<p>Forex and gold inspired streetwear, made for traders who think in candles and live with discipline. From Eldoret, Kenya.</p>
+<div class="cta">
+<a class="btn" href="#collection">SHOP THE COLLECTION</a>
+<a class="btn ghost" href="#order">HOW TO ORDER</a>
+</div>
+</div>
+<img src="images/store.png" alt="Tagoi Wear storefront">
 </header>
 
-<!-- TICKER -->
-<div class="ticker"><div class="ticker-track">
-  <span>XAUUSD ▲</span><span>GBPUSD ▲</span><span>EURUSD ▼</span><span>USDJPY ▲</span><span>NAS100 ▲</span><span>BTCUSD ▲</span><span>WEAR THE MARKET</span><span>XAUUSD ▲</span><span>GBPUSD ▲</span><span>EURUSD ▼</span><span>USDJPY ▲</span><span>NAS100 ▲</span><span>BTCUSD ▲</span><span>WEAR THE MARKET</span>
-</div></div>
+<div class="ticker"><div>XAUUSD &nbsp;&#9670;&nbsp; EURUSD &nbsp;&#9670;&nbsp; GBPUSD &nbsp;&#9670;&nbsp; USDJPY &nbsp;&#9670;&nbsp; GOLD NEVER SLEEPS &nbsp;&#9670;&nbsp; RISK FIRST &nbsp;&#9670;&nbsp; SMALL STEPS BIG RESULTS &nbsp;&#9670;&nbsp; XAUUSD &nbsp;&#9670;&nbsp; EURUSD &nbsp;&#9670;&nbsp; GBPUSD &nbsp;&#9670;&nbsp; USDJPY &nbsp;&#9670;&nbsp; GOLD NEVER SLEEPS &nbsp;&#9670;&nbsp; RISK FIRST &nbsp;&#9670;&nbsp; SMALL STEPS BIG RESULTS &nbsp;&#9670;&nbsp;</div></div>
 
-<!-- SHOP -->
-<section class="products" id="shop">
-  <div class="container">
-    <span class="tag reveal">The Collection</span>
-    <h2 class="section-title reveal">PICK YOUR <span class="gold">PAIR</span></h2>
-    <p class="section-sub reveal">Every design is made for traders. Choose your pair, choose your colour, and send us a message to order.</p>
-    <div class="filters reveal">
-      <button class="filter active" data-f="all">All</button>
-      <button class="filter" data-f="gold">Gold</button>
-      <button class="filter" data-f="forex">Forex Pairs</button>
-      <button class="filter" data-f="crypto">Indices & Crypto</button>
-    </div>
-    <div class="grid" id="productGrid"></div>
-  </div>
+<section id="shop">
+<div class="title"><h2>Shop By <span>Category</span></h2><p>Everything you need to wear the market.</p></div>
+<div class="cats">
+<div class="cat"><h3>T-Shirts</h3><p>Black, cream, green, red</p></div>
+<div class="cat"><h3>Hoodies</h3><p>Black, grey, pairs</p></div>
+<div class="cat"><h3>Jackets</h3><p>Zip front, gold print</p></div>
+<div class="cat"><h3>Bottoms</h3><p>Cargo pants, joggers</p></div>
+<div class="cat"><h3>Caps</h3><p>Four colours</p></div>
+<div class="cat"><h3>Beanies</h3><p>Gold candle logo</p></div>
+</div>
 </section>
 
-<!-- PRICING -->
-<section id="pricing">
-  <div class="container">
-    <span class="tag reveal">Prices</span>
-    <h2 class="section-title reveal">SIMPLE, HONEST <span class="gold">PRICING</span></h2>
-    <p class="section-sub reveal">All prices are in Kenyan shillings. T-shirts range from KES 2,000 to KES 2,500 depending on the design and print.</p>
-    <div class="price-grid">
-      <div class="price-card reveal">
-        <h3>CLASSIC TEE</h3>
-        <div class="big-price">KES 2,000</div>
-        <small style="color:var(--muted)">per T-shirt</small>
-        <ul><li>Single pair logo print</li><li>Soft cotton fabric</li><li>Sizes S to XXL</li><li>Choice of colours</li></ul>
-        <a class="btn btn-outline" href="#order">Choose Classic</a>
-      </div>
-      <div class="price-card featured reveal">
-        <h3>PREMIUM TEE</h3>
-        <div class="big-price">KES 2,300</div>
-        <small style="color:var(--muted)">per T-shirt</small>
-        <ul><li>Gold-foil style print</li><li>Heavyweight cotton</li><li>Candlestick back print</li><li>Sizes S to XXL</li></ul>
-        <a class="btn btn-gold" href="#order">Choose Premium</a>
-      </div>
-      <div class="price-card reveal">
-        <h3>POLO TRADER</h3>
-        <div class="big-price">KES 2,500</div>
-        <small style="color:var(--muted)">per polo-style tee</small>
-        <ul><li>Embroidered chest logo</li><li>Polo collar finish</li><li>Sizes S to XXL</li><li>Best for office and meetups</li></ul>
-        <a class="btn btn-outline" href="#order">Choose Polo</a>
-      </div>
-    </div>
-    <p class="reveal" style="text-align:center;color:var(--muted);margin-top:34px;font-size:.9rem">Buying 3 or more? Message us for a bundle deal.</p>
-  </div>
+<section id="collection" class="collection">
+<div class="title"><h2>The Full <span>Collection</span></h2><p>15 pieces. Front, back and every detail.</p></div>
+<img src="images/collection.png" alt="Tagoi Wear full collection">
 </section>
 
-<!-- HOW TO ORDER -->
-<section id="how" style="background:var(--bg2)">
-  <div class="container">
-    <span class="tag reveal">How to Get Yours</span>
-    <h2 class="section-title reveal">ORDER IN <span class="gold">4 STEPS</span></h2>
-    <p class="section-sub reveal">No complicated checkout. Order the same way you chat with friends.</p>
-    <div class="steps">
-      <div class="step reveal"><div class="ic">👕</div><h3>Pick a Design</h3><p>Choose your favourite pair and colour from the collection above.</p></div>
-      <div class="step reveal"><div class="ic">💬</div><h3>Message Us</h3><p>Send us a message on WhatsApp, Instagram, TikTok or Facebook, or call us directly.</p></div>
-      <div class="step reveal"><div class="ic">📲</div><h3>Confirm and Pay</h3><p>We confirm your size, price and delivery, then you pay using the method we agree on.</p></div>
-      <div class="step reveal"><div class="ic">🚚</div><h3>Get Delivered</h3><p>We deliver to your location or you can arrange a pickup in Eldoret.</p></div>
-    </div>
-  </div>
+<section id="featured">
+<div class="title"><h2>Featured <span>Designs</span></h2><p>Tees from KSh 2,000 to KSh 2,500.</p></div>
+<div class="featured">
+<div class="item"><img src="images/xauusd-tee.png" alt="XAUUSD tee"><div class="info"><h3>XAUUSD Pays The Bill</h3><div class="price">KSh 2,500</div><a class="btn" href="https://wa.me/254114464593?text=Hi%20Tagoi%20Wear%2C%20I%20want%20the%20XAUUSD%20tee">ORDER ON WHATSAPP</a></div></div>
+<div class="item"><img src="images/fibonacci.png" alt="Fibonacci tee"><div class="info"><h3>Fibonacci</h3><div class="price">KSh 2,500</div><a class="btn" href="https://wa.me/254114464593?text=Hi%20Tagoi%20Wear%2C%20I%20want%20the%20Fibonacci%20tee">ORDER ON WHATSAPP</a></div></div>
+</div>
 </section>
 
-<!-- ORDER FORM + SIZES -->
-<section class="order" id="order">
-  <div class="container order-grid">
-    <div class="reveal">
-      <span class="tag">Quick Order</span>
-      <h2 class="section-title">SEND YOUR <span class="gold">ORDER</span></h2>
-      <p class="section-sub" style="margin-bottom:10px">Fill this in and it opens WhatsApp with your order ready to send.</p>
-      <table class="size-table">
-        <tr><th>Size</th><th>Chest (inches)</th><th>Length (inches)</th></tr>
-        <tr><td>S</td><td>36 - 38</td><td>26</td></tr>
-        <tr><td>M</td><td>38 - 40</td><td>27</td></tr>
-        <tr><td>L</td><td>40 - 42</td><td>28</td></tr>
-        <tr><td>XL</td><td>42 - 44</td><td>29</td></tr>
-        <tr><td>XXL</td><td>44 - 46</td><td>30</td></tr>
-      </table>
-      <div class="info-box"><strong>Tip:</strong> Not sure about your size? Tell us your height and weight on WhatsApp and we will recommend one.</div>
-    </div>
-    <form id="orderForm" class="reveal">
-      <label>Your Name</label>
-      <input type="text" id="fName" placeholder="e.g. Kevin" required>
-      <label>Design</label>
-      <select id="fDesign"></select>
-      <label>Style and Price</label>
-      <select id="fStyle">
-        <option value="Classic Tee - KES 2,000">Classic Tee - KES 2,000</option>
-        <option value="Premium Tee - KES 2,300">Premium Tee - KES 2,300</option>
-        <option value="Polo Trader - KES 2,500">Polo Trader - KES 2,500</option>
-      </select>
-      <label>Size</label>
-      <select id="fSize"><option>S</option><option>M</option><option selected>L</option><option>XL</option><option>XXL</option></select>
-      <label>Colour</label>
-      <select id="fColor"><option>Black</option><option>Purple</option><option>White</option><option>Navy</option><option>Gold</option></select>
-      <label>Delivery Location</label>
-      <input type="text" id="fLoc" placeholder="Town or area" required>
-      <button type="submit" class="btn btn-wa">Send Order on WhatsApp</button>
-    </form>
-  </div>
+<section class="store">
+<img src="images/store.png" alt="Inside Tagoi Wear store">
+<div>
+<h2>Built For <span>Traders</span></h2>
+<p>Every design carries a lesson: risk first, plan, execute, repeat. Premium 220 to 260 GSM cotton, bold prints, and a fit made for the streets of Eldoret and beyond.</p>
+<a class="btn" href="https://www.tiktok.com/@kevtradefx">FOLLOW ON TIKTOK</a>
+</div>
 </section>
 
-<!-- FAQ -->
-<section id="faq">
-  <div class="container" style="max-width:780px">
-    <span class="tag reveal">Questions</span>
-    <h2 class="section-title reveal">GOOD TO <span class="gold">KNOW</span></h2>
-    <br>
-    <div class="faq-item reveal"><button class="faq-q">How much are the T-shirts?</button><div class="faq-a">T-shirts range from KES 2,000 to KES 2,500 depending on the style and print you choose.</div></div>
-    <div class="faq-item reveal"><button class="faq-q">How do I order?</button><div class="faq-a">Message us on WhatsApp, Instagram, TikTok or Facebook, call 0114 464 593, or use the quick order form on this page.</div></div>
-    <div class="faq-item reveal"><button class="faq-q">Do you deliver?</button><div class="faq-a">Yes. We deliver within Eldoret and send to other towns. Delivery cost depends on your location and we confirm it before you pay.</div></div>
-    <div class="faq-item reveal"><button class="faq-q">Can I get a custom design?</button><div class="faq-a">Yes. Tell us the pair, name or text you want and we will quote you on WhatsApp.</div></div>
-    <div class="faq-item reveal"><button class="faq-q">What if the size does not fit?</button><div class="faq-a">Message us as soon as you receive it and we will help you sort out an exchange where possible.</div></div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="container">
-    <span class="tag reveal">Get In Touch</span>
-    <h2 class="section-title reveal">CALL OR <span class="gold">CHAT</span></h2>
-    <a href="tel:+254114464593" class="phone reveal">0114 464 593</a>
-    <div class="hero-btns reveal" style="justify-content:center">
-      <a href="tel:+254114464593" class="btn btn-gold">📞 Call Now</a>
-      <a href="https://wa.me/254114464593" target="_blank" rel="noopener" class="btn btn-wa">WhatsApp Us</a>
-    </div>
-    <div class="socials reveal">
-      <!-- Replace # with your real profile links -->
-      <a class="soc" href="#" target="_blank" rel="noopener">📸 Instagram</a>
-      <a class="soc" https://www.tiktok.com/@it'salwayskev target="_blank" rel="noopener">🎵 TikTok</a>
-      <a class="soc" href="#" target="_blank" rel="noopener">📘 Facebook</a>
-      <a class="soc" href="https://wa.me/254114464593" target="_blank" rel="noopener">💬 WhatsApp</a>
-    </div>
-  </div>
+<section id="order">
+<div class="title"><h2>How To <span>Order</span></h2><p>Simple. Fast. On WhatsApp.</p></div>
+<div class="steps">
+<div class="step"><b>01</b><h3>Pick</h3><p>Choose your design, colour and size.</p></div>
+<div class="step"><b>02</b><h3>Message</h3><p>Send us a WhatsApp message on 0114 464 593.</p></div>
+<div class="step"><b>03</b><h3>Receive</h3><p>Pay and get your Tagoi Wear delivered.</p></div>
+</div>
 </section>
 
 <footer>
-  <div class="container">© <span id="yr"></span> Tagoi Wear • Wear the Market • Eldoret, Kenya</div>
+<div class="logo">TAGOI WEAR</div>
+<p>WEAR THE MARKET.</p>
+<div class="links">
+<a href="https://www.tiktok.com/@kevtradefx">TikTok</a>
+<a href="https://wa.me/254114464593">WhatsApp</a>
+<a href="tel:+254114464593">Call 0114 464 593</a>
+</div>
+<p>&copy; 2026 Tagoi Wear, Eldoret, Kenya</p>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
-<a class="fab" href="https://wa.me/254114464593?text=Hi%20Tagoi%20Wear%2C%20I%20want%20to%20order" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l505-1.3A10 10 0 1 0 12 2zm5.2 14c-.2.6-1.3 1.2-1.8 1.2-.5.1-1.1.1-1.8-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.1 1.5 1.8 1 .9 1.8 1.1 2.1 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
-</a>
+<a class="wa" href="https://wa.me/254114464593">WhatsApp Us</a>
 
-<script>
-// PRODUCT DATA - edit names, prices and categories here
-const WA = '254114464593';
-const products = [
-  {name:'XAUUSD', desc:'The gold standard. For the XAU believers.', cat:'gold', price:2300, badge:'BEST SELLER', color:'#f5c542', colors:['#0d0518','#7b2ff7','#ffffff']},
-  {name:'GBPUSD', desc:'Cable. Fast, volatile, unforgettable.', cat:'forex', price:2000, badge:'', color:'#a678ff', colors:['#0d0518','#1c2b5a','#ffffff']},
-  {name:'EURUSD', desc:'The most traded pair on the planet.', cat:'forex', price:2000, badge:'', color:'#6fb3ff', colors:['#0d0518','#7b2ff7','#f5c542']},
-  {name:'USDJPY', desc:'Trade the yen. Respect the trend.', cat:'forex', price:2000, badge:'', color:'#ff6b81', colors:['#0d0518','#ffffff','#7b2ff7']},
-  {name:'GOLD BULL', desc:'Candlesticks climbing. Premium gold print.', cat:'gold', price:2500, badge:'PREMIUM', color:'#ffe08a', colors:['#0d0518','#7b2ff7','#1c2b5a']},
-  {name:'NAS100', desc:'For index traders who chase the open.', cat:'crypto', price:2200, badge:'', color:'#25d366', colors:['#0d0518','#7b2ff7','#ffffff']},
-  {name:'BTCUSD', desc:'Digital gold for digital traders.', cat:'crypto', price:2200, badge:'NEW', color:'#ffa94d', colors:['#0d0518','#7b2ff7','#f5c542']},
-  {name:'READ THE CANDLE', desc:'Price action is the only teacher you need.', cat:'forex', price:2300, badge:'', color:'#f5c542', colors:['#0d0518','#ffffff','#7b2ff7']}
-];
-
-function shirtSVG(text, color, fill){
-  const size = text.length > 8 ? 22 : text.length > 6 ? 30 : 36;
-  return `<svg viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg"><path d="M95 20 L40 50 L10 105 L58 128 L72 105 L72 290 Q72 305 90 305 L210 305 Q228 305 228 290 L228 105 L242 128 L290 105 L260 50 L205 20 Q150 55 95 20Z" fill="${fill}" stroke="${color}" stroke-width="3"/><text x="150" y="165" text-anchor="middle" font-family="Bebas Neue,sans-serif" font-size="${size+8}" fill="${color}">${text}</text><rect x="105" y="182" width="90" height="2" fill="${color}" opacity=".6"/><text x="150" y="215" text-anchor="middle" font-family="Bebas Neue,sans-serif" font-size="15" fill="#f4eefc" letter-spacing="4">TAGOI WEAR</text></svg>`;
-}
-
-const grid = document.getElementById('productGrid');
-const designSel = document.getElementById('fDesign');
-
-products.forEach(p=>{
-  const msg = encodeURIComponent(`Hi Tagoi Wear, I want to order the ${p.name} T-shirt (KES ${p.price.toLocaleString()}).`);
-  const card = document.createElement('div');
-  card.className = 'card reveal';
-  card.dataset.cat = p.cat;
-  card.innerHTML = `
-    ${p.badge ? `<span class="badge">${p.badge}</span>` : ''}
-    <div class="card-img">${shirtSVG(p.name, p.color, '#1d0f38')}</div>
-    <div class="card-body">
-      <h3>${p.name}</h3>
-      <p>${p.desc}</p>
-      <div class="colors">${p.colors.map(c=>`<span class="dot" style="background:${c}"></span>`).join('')}</div>
-      <div class="card-foot">
-        <div class="price">KES ${p.price.toLocaleString()}</div>
-        <a class="order-sm" href="https://wa.me/${WA}?text=${msg}" target="_blank" rel="noopener">Order</a>
-      </div>
-    </div>`;
-  grid.appendChild(card);
-  const opt = document.createElement('option');
-  opt.textContent = p.name;
-  designSel.appendChild(opt);
-});
-
-// FILTERS
-document.querySelectorAll('.filter').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    const f = btn.dataset.f;
-    document.querySelectorAll('.card').forEach(c=>{
-      c.classList.toggle('hidden', f!=='all' && c.dataset.cat!==f);
-    });
-  });
-});
-
-// ORDER FORM -> WHATSAPP
-document.getElementById('orderForm').addEventListener('submit',e=>{
-  e.preventDefault();
-  const msg = `Hello Tagoi Wear! I would like to order:%0A%0A` +
-    `Name: ${encodeURIComponent(fName.value)}%0A` +
-    `Design: ${encodeURIComponent(fDesign.value)}%0A` +
-    `Style: ${encodeURIComponent(fStyle.value)}%0A` +
-    `Size: ${encodeURIComponent(fSize.value)}%0A` +
-    `Colour: ${encodeURIComponent(fColor.value)}%0A` +
-    `Delivery: ${encodeURIComponent(fLoc.value)}`;
-  window.open(`https://wa.me/${WA}?text=${msg}`,'_blank');
-});
-
-// FAQ
-document.querySelectorAll('.faq-q').forEach(q=>{
-  q.addEventListener('click',()=>q.parentElement.classList.toggle('open'));
-});
-
-// MOBILE MENU
-const nl = document.getElementById('navLinks');
-document.getElementById('menuBtn').addEventListener('click',()=>nl.classList.toggle('open'));
-nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nl.classList.remove('open')));
-
-// SCROLL REVEAL
-const io = new IntersectionObserver(en=>{
-  en.forEach(x=>{ if(x.isIntersecting){ x.target.classList.add('show'); io.unobserve(x.target);} });
-},{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-// YEAR
-document.getElementById('yr').textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
